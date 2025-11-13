@@ -1,0 +1,214 @@
+.heroContent{
+    width: 672px;
+    height:  250px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.tagContainer{
+    display: flex;
+    width: 171px !important;
+    height: 42px;
+    padding: 9px 17px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 33554400px;
+    border: 1px solid rgba(97, 95, 255, 0.30);
+    background: rgba(79, 57, 246, 0.20);
+}
+
+.tag{
+    display: flex;
+    height: 24px;
+    padding-bottom: 2px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    display: inline-block;
+}
+
+.text{
+    color: #A3B3FF;
+    text-align: center;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    line-height: 24px; /* 150% */
+}
+
+.heading1{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+    
+}
+
+.heading1 span{
+   
+        background: linear-gradient(90deg, #51A2FF 0%, #C27AFF 50%, #7C86FF 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        font-family: Arial;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    background: linear-gradient(135deg, #1E1A4D 0%, #3C0366 50%, #162456 100%);
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.squareContainers{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+
+.square1{
+    position: absolute;
+    top: 9.46px;
+    left: 30%;
+    width: 446.602px;
+    height: 446.602px;
+    flex-shrink: 0;
+    border-radius: 33554400px;
+    background: rgba(152, 16, 250, 0.30);
+    filter: blur(64px);
+}
+
+ .square2{
+    position: absolute;
+    width: 390.052px;
+    height: 390.052px;
+    flex-shrink: 0;
+    border-radius: 33554400px;
+    background: rgba(21, 93, 252, 0.30);
+    filter: blur(64px);
+    bottom: -0.1%;
+    left: 50%;
+}
+
+.square3{
+    position: absolute;
+    width: 384px;
+    height: 384px;
+    flex-shrink: 0;
+    border-radius: 33554400px;
+    background: rgba(79, 57, 246, 0.20);
+    filter: blur(64px);
+    bottom: 10%;
+    left: 56%;
+}
+
+.tagWordsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;   
+}
+
+.buttonsTextContainer{
+    color: #CAD5E2;
+    text-align: center;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.textContainer{
+    display: flex;
+    width: 100%;
+    padding: 0 12.203px 2px 12.797px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonsContainer{
+    display: flex;
+    max-height: 40px;
+    padding-right: 0.016px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    flex-shrink: 0;
+
+    
+
+    .buttonBlack{
+        display: flex;
+        width: fit-content;
+        height: 40px;
+        padding: 0 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        border: 1px solid rgba(173, 70, 255, 0.50);
+        background: #0A0A1A;
+        
+        
+        
+        span{
+            color: #E0E7FF;
+            font-family: Arial;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px; /* 142.857% */
+        }
+    }
+}
+
+.button{
+    display: flex;
+    height: 40px;
+    width: fit-content;
+    padding: 0 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #4F39F6;
+    }
+
+.button > span{
+    color: #FFF;
+    font-family: Arial;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+}
+
+.icon{
+    position: absolute;
+    bottom: 25px;
+}

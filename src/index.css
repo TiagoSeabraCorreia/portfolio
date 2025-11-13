@@ -5,4 +5,8 @@ body, html{
 
 *, *::after, *::before {
   box-sizing: border-box;
+} /* 150% */
+
+#root{
+  background: #020618;
 }
