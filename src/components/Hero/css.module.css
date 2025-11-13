@@ -49,22 +49,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: start;
-
-    
 }
 
 .heading1 span{
-   
-        background: linear-gradient(90deg, #51A2FF 0%, #C27AFF 50%, #7C86FF 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-align: center;
-        font-family: Arial;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px; /* 150% */
+    background: linear-gradient(90deg, #51A2FF 0%, #C27AFF 50%, #7C86FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
 }
 
 .main {
@@ -80,10 +77,10 @@
 }
 
 .squareContainers{
-        position: absolute;
-        height: 100%;
-        width: 100%;
-    }
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
 
 .square1{
     position: absolute;
@@ -97,7 +94,7 @@
     filter: blur(64px);
 }
 
- .square2{
+.square2{
     position: absolute;
     width: 390.052px;
     height: 390.052px;
@@ -157,33 +154,29 @@
     align-items: flex-start;
     gap: 16px;
     flex-shrink: 0;
+}
 
-    
+.buttonBlack{
+    display: flex;
+    width: fit-content;
+    height: 40px;
+    padding: 0 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid rgba(173, 70, 255, 0.50);
+    background: #0A0A1A;
+}
 
-    .buttonBlack{
-        display: flex;
-        width: fit-content;
-        height: 40px;
-        padding: 0 24px;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-        flex-shrink: 0;
-        border-radius: 8px;
-        border: 1px solid rgba(173, 70, 255, 0.50);
-        background: #0A0A1A;
-        
-        
-        
-        span{
-            color: #E0E7FF;
-            font-family: Arial;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 20px; /* 142.857% */
-        }
-    }
+span{
+    color: #E0E7FF;
+    font-family: Arial;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
 }
 
 .button{
