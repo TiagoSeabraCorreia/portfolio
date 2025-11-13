@@ -1,7 +1,5 @@
 import './css.css'
 
-
-
 export function Navigation(){
     return (
         <>
@@ -15,9 +13,9 @@ export function Navigation(){
                        <span>Skills</span>
                        <span>Projects</span>
                        <span>Contact</span>
-                       <div className='hire-button'>
-                            <span>Hire Me</span>
-                       </div>
+                        <div className='hire-button'>
+                                <span>Hire Me</span>
+                        </div>
                     </div>
                 </div>
             </div>
