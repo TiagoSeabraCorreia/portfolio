@@ -1,0 +1,103 @@
+.main{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    flex-shrink: 0;
+    flex-direction: column;
+    gap: 60px;
+    padding-top: 96px;
+}
+
+.stack{
+    display: flex;
+    width: 362.656px;
+    height: 402px;
+    padding: 33px 33px 1px 33px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 16px;
+    border: 1px solid rgba(49, 65, 88, 0.50);
+    background: linear-gradient(135deg, rgba(15, 23, 43, 0.50) 0%, rgba(29, 41, 61, 0.50) 100%);
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.titleContainer{
+    display: flex;
+    padding: 0 231.656px 2px 0;
+    align-items: center;
+    align-self: stretch;
+    width: 100%;
+    text-wrap-mode: nowrap;
+}
+
+.titleContainer > span{
+    color: #A3B3FF;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+.skillsContainer{
+    display: flex;
+    height: 288px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    flex-shrink: 0;
+    align-self: stretch;
+}
+
+.textContainer{
+
+}
+
+.textContainer > span{
+    color: #CAD5E2;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.skillContainer{
+    display: flex;
+    height: 48px;
+    padding-left: 11.438px;
+    align-items: center;
+    gap: 11.438px;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 10px;
+    background: rgba(29, 41, 61, 0.50);
+}
+
+.littleBall{
+    width: 9.125px;
+    height: 9.125px;   
+}
+
+.skills> .stack:nth-child(1) > .skillsContainer > .skillContainer > .littleBall{
+    border-radius: 33554400px;
+    background: linear-gradient(90deg, #155DFC 0%, #0092B8 100%);
+}
+
+.skills> .stack:nth-child(2) > .skillsContainer > .skillContainer > .littleBall{
+    border-radius: 33554400px;
+    background: linear-gradient(90deg, #9810FA 0%, #E60076 100%);
+}
+
+.skills> .stack:nth-child(3) > .skillsContainer > .skillContainer > .littleBall{
+    border-radius: 33554400px;
+    background: linear-gradient(90deg, #4F39F6 0%, #155DFC 100%);
+}

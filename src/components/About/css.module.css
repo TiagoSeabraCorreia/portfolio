@@ -8,56 +8,9 @@
     flex-direction: column;
     height: 100vh;
     gap: 64px;
+    background: linear-gradient(180deg, #020618 0%, rgba(30, 26, 77, 0.50) 100%);
 }
 
-.aboutMe{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    align-self: stretch; 
-}
-
-.fadeText{
-    background: linear-gradient(90deg, #7C86FF 0%, #C27AFF 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-    font-family: Arial;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-.fadeTextContainer{
-   display: flex;
-    height: 24px;
-    padding-bottom: 2px;
-    justify-content: center;
-    align-items: center;
-}
-
-.longTextContainer{
-    display: flex;
-    height: 48px;
-    padding: 0 7.531px 2px 8.469px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.longText{
-    color: #90A1B9;
-    text-align: center;
-    font-family: Arial;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-}
 
 .cardsContainer{
     display: grid;
