@@ -60,6 +60,7 @@ export default function Contact(){
                                 data.map((data: SocialProps, index: number) => (
                                     <>
                                         <Social 
+                                            key={index}
                                             icon={data.icon}
                                             title={data.title} 
                                         />

@@ -28,7 +28,6 @@
     display: grid;
     height: 504px;
     row-gap: 48px;
-
     column-gap: 100px;
     flex-shrink: 0;
     align-self: stretch;
@@ -63,7 +62,7 @@
     grid-column: 2 / span 1;
 }
 
-.inputContainer > label,  .textareaContainer > label{
+.inputContainer > label,  .textareaContainer > label {
     display: flex;
     padding: 0 381px 2px 0;
     align-items: center;
