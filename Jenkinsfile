@@ -10,16 +10,6 @@ pipeline {
             }
         }
 
-        stage('Build Docker Image') {
-            steps {
-                sh '''
-                    cd ~/projects/portfolio
-                    docker compose down
-                    docker compose up -d --build
-                '''
-            }
-        }
-
         stage('Deploy to VPS') {
             steps {
                 sh '''
