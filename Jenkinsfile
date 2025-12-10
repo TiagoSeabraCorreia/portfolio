@@ -17,6 +17,9 @@ pipeline {
             steps {
                 sh '''
                     cd /host/portfolio
+                    docker stop portfolio
+                    docker rm portfolio
+                    docker rmi tiagocorr/portfolio:latest
                     docker pull tiagocorr/portfolio:latest
                     docker compose down
                     docker compose up -d --force-recreate
