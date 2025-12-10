@@ -2,6 +2,16 @@ pipeline {
     agent any
 
     stages {
+        stage('Login DockerHub') {
+            steps {
+                withCredentials([usernamePassword(credentialsId: 'dockerhub', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
+                    sh '''
+                        echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
+                    '''
+                }
+            }
+        }
+
         stage('Deploy') {
             steps {
                 sh '''
@@ -10,16 +20,6 @@ pipeline {
                     docker compose down
                     docker compose up -d
                 '''
-            }
-        }
-
-        stage('Login DockerHub') {
-            steps {
-                withCredentials([usernamePassword(credentialsId: 'dockerhub', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
-                    sh '''
-                        echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
-                    '''
-                }
             }
         }
     }
