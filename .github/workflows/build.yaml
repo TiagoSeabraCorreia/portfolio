@@ -28,3 +28,8 @@ jobs:
         file: ./Dockerfile
         push: true
         tags: tiagocorr/portfolio:latest
+
+    - name: Trigger Jenkins Deploy
+      run: |
+        curl -X POST "http://apps.tiagocorreia.site:8080/multibranch-webhook-trigger/invoke?token=portfolio-trigger"
+
