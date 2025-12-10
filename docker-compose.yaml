@@ -1,6 +1,8 @@
 version: '3.8'
+
 services:
   portfolio:
-    build: .
+    image: tiagocorr/portfolio:latest
+    restart: unless-stopped
     ports:
       - "80:80"

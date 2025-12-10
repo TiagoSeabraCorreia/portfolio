@@ -2,20 +2,13 @@ pipeline {
     agent any
 
     stages {
-
-        stage('Checkout') {
-            steps {
-                git branch: 'main',
-                    url: 'https://github.com/TiagoSeabraCorreia/portfolio'
-            }
-        }
-
-        stage('Deploy to VPS') {
+        stage('Deploy') {
             steps {
                 sh '''
                     cd /host/portfolio
+                    docker compose pull
                     docker compose down
-                    docker compose up -d --build
+                    docker compose up -d
                 '''
             }
         }
@@ -23,7 +16,7 @@ pipeline {
 
     post {
         success {
-            echo "Deploy completo com sucesso!"
+            echo "Deploy concluído!"
         }
         failure {
             echo "Deploy falhou!"
