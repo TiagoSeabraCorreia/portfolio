@@ -16,7 +16,6 @@ pipeline {
             steps {
                 sh '''
                     cd /host/portfolio
-                    docker compose pull
                     docker compose down
                     docker compose build --no-cache
                     docker compose up -d
