@@ -12,7 +12,11 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t portfolio:latest .'
+                sh '''
+                    cd ~/projects/portfolio
+                    docker compose down
+                    docker compose up -d --build
+                '''
             }
         }
 
