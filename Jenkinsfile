@@ -23,7 +23,7 @@ pipeline {
         stage('Deploy to VPS') {
             steps {
                 sh '''
-                    cd ~/projects/portfolio
+                    cd /host/portfolio
                     docker compose down
                     docker compose up -d --build
                 '''
