@@ -2,6 +2,7 @@ pipeline {
     agent any
 
     stages {
+
         stage('Login DockerHub') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'dockerhub', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
@@ -16,8 +17,8 @@ pipeline {
             steps {
                 sh '''
                     cd /host/portfolio
+                    docker pull tiagocorr/portfolio:latest
                     docker compose down
-                    docker compose build --no-cache
                     docker compose up -d
                 '''
             }
@@ -26,10 +27,10 @@ pipeline {
 
     post {
         success {
-            echo "Deploy concluído!"
+            echo "Deploy complete!"
         }
         failure {
-            echo "Deploy falhou!"
+            echo "Deploy failed!"
         }
     }
 }
