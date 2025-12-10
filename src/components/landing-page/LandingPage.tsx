@@ -8,7 +8,7 @@ export function LandingPage() {
             lg:h-screen lg:px-24 lg:flex-row lg:flex lg:justify-between lg:items-center"
             >
                 <div className="flex flex-col gap-0">
-                    <span className="md:text-[96px] sm:text-[96px] sm:leading-[90px] lg:text-[144px] font-inter lg:leading-[130px] font-bold">Tiago</span>
+                    <span className="md:text-[96px] sm:text-[96px] sm:leading-[90px] lg:text-[144px] font-inter lg:leading-[130px] font-bold">TiagoCorreia</span>
                     <span  className="md:text-[96px] sm:text-[96px] sm:leading-[90px] lg:text-[144px] lg:leading-[130px] font-bold font-inter">Correia</span>
                 </div>
             <div className="
